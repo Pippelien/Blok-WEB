@@ -1,0 +1,130 @@
+<!-- atribute selector -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>99 Verhalen</title>
+    <link rel="stylesheet" href="css/transavia.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <img id="logo" src="fotos/transavia-logo.png" alt="Link homepage">
+                    </a>
+                </li>
+                <li><a href="">Verhalen</a></li>
+                <li><a href="">Mijn lijst</a></li>
+                <li><a href="formulier.html">Account</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main>
+        <article id="intro">
+            <h2>99 Verhalen</h2>
+            <p>Lees hier de leukst gestijlde verhalen voor op reis!</p>
+        </article>
+
+        <a class="hoofdblok" href="verhaal.html">
+            <article id="hoofdblok">
+                <h3>Verhaal van de dag</h3>
+            </article>
+        </a>
+
+        <!--
+        <form id="zoek" action="linkje">
+            <input class="zoek" type="search"> -->
+        <button class="zoek"><img src="fotos/zoekicoon.png" alt="zoek button"></button>
+        <!-- </form> -->
+
+        <h3>Sorteren</h3>
+        <form id="sorteren" method="post" action="index.html">
+            <INPUT TYPE="radio" NAME="sortering" VALUE="Populariteit" checked>Populariteit
+            <INPUT TYPE="radio" NAME="sortering" VALUE="Alfabetisch">Alfabetisch
+            <INPUT TYPE="radio" NAME="sortering" VALUE="Nieuw">Nieuw
+        </form>
+
+        <h3>Filter</h3>
+        <form id="gevoel" method="post" action="index.html">
+            <fieldset>
+                <legend>Gevoel</legend>
+                <INPUT TYPE="checkbox" id="boos" NAME="gevoel" VALUE="boos" checked>
+                <label for="boos">Boos</label>
+                <INPUT TYPE="checkbox" NAME="gevoel" id="blij" VALUE="blij">
+                <label for="blij">Blij</label>
+                <INPUT TYPE="checkbox" id="treurig" NAME="gevoel" VALUE="treurig">
+                <label for="treurig">Treurig</label>
+                <INPUT TYPE="checkbox" id="gestrest" NAME="gevoel" VALUE="Gestrest">
+                <label for="gestrest">Gestrest</label>
+                <INPUT TYPE="checkbox" id="gefrustreerd" NAME="gevoel" VALUE="Gefrustreerd">
+                <label for="gefrustreerd">Gefrustreerd</label>
+                <INPUT TYPE="checkbox" id="Dromerig" NAME="gevoel" VALUE="Dromerig">
+                <label for="Dromerig">Dromerig</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Kleur</legend>
+                <label for="rood">Rood</label>
+                <input type="range" id="rood" name="rood" value="0">
+
+                <label for="blauw">Blauw</label>
+                <input type="range" id="blauw" name="blauw" value="0">
+
+                <label for="groen">Groen</label>
+                <input type="range" id="groen" name="groen" value="0">
+            </fieldset>
+        </form>
+
+        <hr>
+        <h3>Populaire verhalen</h3>
+        <a href="verhaal.html">
+            <article class="verhaal">
+                <h4>36. Alliteratie</h4>
+                <img class="Verhalen" src="fotos/Boek.jpg" alt="Verhaal">
+            </article>
+        </a>
+
+        <a href="verhaal.html">
+            <article class="verhaal">
+                <h4>47. Haiku</h4>
+                <img class="Verhalen" src="fotos/Boek.jpg" alt="Verhaal">
+            </article>
+        </a>
+
+        <a href="verhaal.html">
+            <article class="verhaal">
+                <h4>55. Verhaal</h4>
+                <img class="Verhalen" src="fotos/Boek.jpg" alt="Verhaal">
+            </article>
+        </a>
+
+        <hr>
+
+        <h3>Nieuwe verhalen</h3>
+        <a href="verhaal.html">
+            <article class="verhaal">
+                <h4>Verhaal 1</h4>
+                <img class="Verhalen" src="fotos/Boek.jpg" alt="Verhaal">
+            </article>
+        </a>
+
+        <a href="verhaal.html">
+            <article class="verhaal">
+                <h4>Verhaal 2</h4>
+                <img class="Verhalen" src="fotos/Boek.jpg" alt="Verhaal">
+            </article>
+        </a>
+
+
+        <a class="naarbovenknop" href="#top">Naar boven</a>
+
+
+    </main>
+</body>
+</html>

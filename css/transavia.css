@@ -1,0 +1,235 @@
+/* standaard */
+body {
+    font-family: Nexa Bold;
+    font-size: 16px;
+    background-color: #F3E5D8;
+    margin: 1em;
+}
+
+nav {
+    padding: 1px;
+    text-align: left;
+    background-color: white;
+    margin: -1em -1em 0em;
+}
+
+ul {
+    padding: 0px;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #00D66C;
+    font-weight: bold;
+}
+
+img#logo {
+    width: 15%;
+}
+
+a:hover {
+    color: #2800A0;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+a:active {
+    color: #2800A0;
+    text-decoration: underline;
+}
+
+li {
+    display: inline;
+    padding: 7px;
+    list-style-type: none;
+    font-size: 14px;
+}
+
+h1 {
+    display: inline;
+    padding-right: 8em;
+    text-align: left;
+}
+
+
+/* Sorteren en Filteren */
+form {
+    background-color: white;
+    border-radius: 1em;
+}
+
+form#gevoel input[type=checkbox] {
+    display: block;
+}
+form#gevoel input[type=range] {
+    display: block;
+}
+
+/* index.html */
+form#zoek {
+    margin-top: 1em;
+}
+
+label {
+    display: inline-block;
+}
+
+/*
+input.zoek {
+    font-size: 16px;
+    background-color: #FF3268;
+    border: none;
+    color: white;
+    display: inline;
+}
+
+input.zoek:focus {
+    border: 2px solid green;
+    outline: none;
+}
+*/
+
+button.zoek {
+    display: inline;
+    color: white;
+    width: 10em;
+    background-color: #FF3268;
+    border-radius: 3em;
+    padding: 1em 1em;
+    margin: 1em 0em;
+    box-shadow: 0px 3px 3px #CA2B55;
+    border: none;
+}
+
+button.zoek img {
+    width: 30%;
+}
+
+article#intro {
+    background-color: #2800A0;
+    color: white;
+    height: 7em;
+    padding: 1em;
+    margin: 1em 0em 1em 0em;
+    border-radius: 1em;
+
+}
+
+article#hoofdblok {
+    background: white;
+    padding: 15px;
+    border-radius: 1em;
+}
+
+a.hoofdblok {
+    text-decoration: none;
+}
+
+article.verhaal {
+    background-color: white;
+    border-radius: 1em;
+    width: 22em;
+    height: 18em;
+    padding: 15px;
+    margin: auto;
+    margin-bottom: 2em;
+    position: relative;
+}
+
+img.Verhalen {
+    width: 100%;
+}
+
+h3{
+    color: #2800A0;
+    font-size: 2em;
+    margin: 20px 0px;
+}
+h4 {
+    background-color: #00D66C;
+    text-transform: uppercase;
+    font-size: 22px;
+    color: white;
+    position: absolute;
+    margin-left: 1em;
+    padding: 1em 2em 1em 2em;
+    border-radius: 15px;
+}
+
+a.naarbovenknop {
+    background-color: #FF3268;
+    color: white;
+    padding: 1em;
+    margin: 2em 0em;
+    border-radius: 1em;
+    text-decoration: none;
+}
+
+/* formulier.html */
+h2.accinlo {
+    color: #2800A0;
+}
+
+form a {
+    color: #2800A0;
+}
+
+form#inloggen {
+    height: 25em;
+    padding: 1em;
+    margin-top: 1em;
+}
+
+form#inloggen input[type=text], form#aanmelden input[type=text] {
+    display: block;
+    width: 21em;
+    padding: 10px 10px;
+    font-size: 1em;
+    border-color: lightgrey;
+    margin: 2px 0em 15px;
+    border-radius: 10px;;
+    border: 1px solid #EFEFEF;
+}
+
+form#inloggen input[type=submit], form#aanmelden input[type=submit] {
+    display: block;
+    font-size: 20px;
+    background-color: #FF3268;
+    color: white;
+    padding: 10px 10px;
+    margin: 1em 0em;
+    border-radius: 2em;
+    width: 7em;
+    box-shadow: 0px 3px 3px #CA2B55;
+    border: none;
+}
+
+input[type=text]:focus {
+    outline-color: #2800A0;
+}
+
+p.inloggen {
+    display: inline;
+}
+
+/* aanmelden.html */
+form#aanmelden {
+ height: 33em;
+    padding: 1em;
+    margin-top: 1em;
+}
+
+/* verhaal.html */
+
+article#eigenverhaal {
+    background-color: white;
+    height: 30em;
+    border-radius: 1em;
+}
+
+article#eigenverhaal p {
+    margin: 1em;
+}
+
+
