@@ -4,53 +4,57 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/transavia.css" type="text/css">
     <title>99 Verhalen</title>
-     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
+
 <body>
     <header>
         <nav>
             <ul>
                 <li>
                     <a href="index.html">
-                        <img id="logo" src="fotos/transavia-logo.png" alt="Link homepage">
+                        <img src="fotos/transavia-logo.png" alt="Link homepage">
                     </a>
                 </li>
-                <li><a href="">Verhalen</a></li>
-                <li><a href="">Mijn lijst</a></li>
-                <li><a href="formulier.html">Account</a></li>
+                <li>
+                    <a href=""><img src="iconen/downloadicoon.png" alt="Downloaden"><span>Downloaden</span></a>
+                </li>
+                <li>
+                    <a href=""><img src="iconen/mijnlijsticoon2.png" alt="Mijn lijst"><span>Mijn Lijst</span></a>
+                </li>
+                <li>
+                    <a href="formulier.html"><img src="iconen/account%20icoon.png" alt="Account"><span>Account</span></a>
+                </li>
             </ul>
-
         </nav>
     </header>
+    <main>
+        <div class="aanmelden">
+            <form action="index.html" name="formulier">
+                <fieldset>
+                    <legend>Account</legend>
+                    <p>Vul je e-mailadres en wachtwoord in om in te loggen.</p>
+                    <label for="mail">E-mail</label>
+                    <input type="text" id="mail" placeholder="gebruiker@domein.nl" required="required">
 
-<article>
-    <form id="inloggen" action="index.html">
-            <h2 class="accinlo">Account</h2>
-             <p>Vul je e-mailadres en wachtwoord in om in te loggen.</p>
-              <label for="mail">E-mail</label>
-               <input type="text" id="mail" placeholder="gebruiker@domein.nl" required="required">
+                    <label for="password">Wachtwoord</label>
+                    <input type="text" id="password" placeholder="wachtwoord" required="required">
 
-                <label for="password">Wachtwoord</label>
-                <input type="text" id="password" placeholder="wachtwoord" required="required">
+                    <a href="">Wachtwoord vergeten?</a>
 
-                <a href="">Wachtwoord vergeten?</a>
-
-                <input type="submit" value="Inloggen"/>
-                <p class="inloggen">Geen account? </p><a href="aanmelden.html">Meld mij aan!</a>
+                    <input type="submit" value="Inloggen" />
+                    <p>Geen account? </p><a href="aanmelden.html">Meld mij aan!</a>
+                </fieldset>
             </form>
-    </article>
+        </div>
+    </main>
 
-
-
-
-
-
-
-
-
-
-
-
-
+    <footer class="inlogfooter">
+        <p>Transavia</p>
+        <img src="iconen/facebookicoon.png" alt="facebook">
+        <img src="iconen/instaicoon.png" alt="instagram">
+        <img src="iconen/twittericoon.png" alt="twitter">
+    </footer>
+    <script src="js/transavia.js"></script>
 </body>
 </html>

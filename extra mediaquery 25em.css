@@ -1,0 +1,146 @@
+ ontwerp voor Iphone 8 Plus
+@media(min-width: 25em) {
+    header {
+        margin: -1em;
+        margin-bottom: 1em;
+    }
+
+    nav a {
+        font-size: 20px;
+    }
+
+    section:first-child {
+        height: 4em;
+        margin: auto;
+        margin-bottom: 1em;
+        padding: 1em;
+        width: 22em;
+    }
+    section h1 {
+        font-size: 20px;
+        margin: 0;
+    }
+
+    main>article {
+        height: 18em;
+        margin: auto;
+        margin-bottom: 2em;
+        padding: 15px;
+        position: relative;
+        width: 22em;
+    }
+    main>article button {
+        color: white;
+        font-size: 1em;
+        font-weight: bold;
+        margin: 0 0 2em 0;
+        padding: 2em 1em;
+    }
+    main>article h2 {
+        font-size: 20px;
+        margin: -15px;
+    }
+    main article img {
+        border-radius: 15px 15px 0 0;
+        margin: -15px;
+        width: 109%;
+    }
+    main>a {
+        text-decoration: none;
+    }
+    h3 {
+        color: #00D66C;
+        font-size: 2em;
+    }
+    main>button {
+        border-radius: 3em;
+        box-shadow: 0 3px 3px #120145;
+        color: white;
+        display: inline;
+        margin: 1em 0;
+        padding: 1em 1em;
+        width: 10em;
+    }
+    main>button img {
+        width: 30%;
+    }
+
+    section fieldset {
+        border: 1px solid blue;
+    }
+    section fieldset legend {
+        color: #00D66C;
+        font-size: 1.1em;
+    }
+
+    form[name='filter'] {
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+    form.active {
+    background-color: white;
+    border-radius: 1em;
+    height: 23em;
+    margin: auto;
+    margin-top: 1em;
+    padding: 2em 1em;
+    width: 16em;
+}
+    form[name=formulier] {
+    background-color: white;
+    border-radius: 1em;
+    margin: auto;
+    margin-top: 1em;
+    padding: 2em 1em;
+    width: 16em;
+}
+
+    form legend {
+        font-size: 2em;
+    }
+    form input[type=text] {
+        font-size: 1em;
+        padding: 10px 10px;
+        width: 95%;
+    }
+    form input[type=submit] {
+        font-size: 20px;
+        margin: 2em 0;
+        padding: 10px 10px;
+        width: 7em;
+    }
+
+    section article {
+        height: 18em;
+        margin: auto;
+        margin-bottom: 3em;
+        padding: 15px;
+        width: 22em;
+    }
+    section article img {
+        border-radius: 15px 15px 0 0;
+        margin: -15px;
+        width: 109%;
+    }
+    section article button {
+        color: white;
+        font-size: 1em;
+        font-weight: bold;
+        margin: 0 0 2em 0;
+        padding: 2em 1em;
+    }
+    h4 {
+        font-size: 1.5em;
+        margin: 20px 0;
+    }
+    h2,h5 {
+        border-radius: 15px 15px 0 0;
+        font-size: 20px;
+        margin: -15px;
+        padding: 1.5em 1em 1.5em 1em;
+        width: 90%;
+    }
+
+}

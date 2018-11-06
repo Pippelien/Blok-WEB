@@ -1,0 +1,808 @@
+@font-face {
+    font-family: nexa;
+    src: url('nexa/Nexa Bold.otf');
+}
+
+body {
+    background-color: #F3E5D8;
+    font-family: nexa;
+    font-size: 16px;
+    margin: 1em;
+    margin-bottom: 0;
+}
+
+header {
+    background-color: white;
+    margin: -1em -1em 0 -1em;
+    width: calc(100% + 3em);
+    height: 5.9em;
+}
+
+nav {
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    z-index: 1;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav a {
+    color: #00D66C;
+    font-size: 15px;
+    /* tekst in nav */
+    font-weight: bold;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+ul {
+    /* ul heeft van zichzelf padding left*/
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style-type: none;
+    padding: 10px 15px;
+    padding-bottom: 0;
+}
+
+
+/* logo aan rechts */
+
+li:first-child {
+    margin-right: auto;
+    padding-top: -2em;
+}
+
+li:first-child a img {
+    margin: -0.3em;
+    width: 2.9em;
+}
+
+
+/* icoon downloaden */
+
+li:nth-child(2) a img {
+    width: 2em;
+}
+
+
+/* downloaden icoon */
+
+li:nth-child(3) a img {
+    width: 1.7em;
+}
+
+
+/* profiel icoon */
+
+li:last-child a img {
+    margin-top: -0.6em;
+    margin-left: -0.6em;
+    width: 3.5em;
+}
+
+li a span {
+    display: none;
+}
+
+
+/* index.html */
+
+section:first-child {
+    background-color: white;
+    border-radius: 1em;
+    color: #2800A0;
+    opacity: 0.8;
+    display: block;
+    height: 2em;
+    margin: auto;
+    margin-bottom: 1em;
+    padding: 0.8em;
+    width: 20em;
+}
+
+section h1 {
+    color: #2800A0;
+    font-size: 1.6em;
+    margin: 0;
+    text-align: center;
+}
+
+section p {
+    font-size: 0.8em;
+    text-align: center;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    margin-top: -0.1em;
+}
+
+
+/* uitgelicht */
+
+main div {
+    background-image: url(achtergrong35.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200%;
+    height: 26em;
+    margin: -2em;
+    display: flex;
+    flex-direction: column;
+    padding-top: 1em;
+}
+
+/* achtergrond bij aanmelden langer */
+main div.aanmelden {
+    height: 36em;
+}
+
+main div div {
+    background-image: none;
+}
+
+main div article {
+    background-color: white;
+    border-radius: 1em;
+    display: grid;
+    height: 17em;
+    margin: auto;
+    margin-top: 1em;
+    margin-bottom: 0;
+    padding: 15px;
+    position: relative;
+    width: 20em;
+}
+
+main div article a img {
+    border-radius: 15px 15px 0 0;
+    margin: -15px;
+    width: 110%;
+}
+
+main div article a h2 {
+    font-size: 15px;
+    margin-top: +14em;
+    width: 90%;
+}
+
+/* buttons main article*/
+
+main div article img[alt="downloadgroen"] {
+    width: 2.1em;
+    margin-left: 13.9em;
+    margin-top: +2em;
+    border-radius: 0.2em;
+}
+
+main div article img[alt="opslaangroen"] {
+    width: 1.8em;
+    margin-left: 17em;
+    margin-top: -2.9em;
+}
+
+main>a {
+    text-decoration: none;
+}
+label {
+    display: inline-block;
+}
+
+main section:nth-child(2){
+    margin: auto;
+    width: 18em;
+}
+main section button {
+    background-color: #2800A0;
+    border: none;
+    border-radius: 3em;
+    box-shadow: 0 3px 3px #120145;
+    color: white;
+    display: inline;
+    font: inherit;
+    padding: 0.5em 2em;
+}
+main section button img {
+    width: 60%;
+}
+main section button:nth-of-type(2) {
+    width: 6em;
+    padding: 0.2em 2em;
+    background-color: #FF3268;
+    box-shadow: 0 3px 3px #CA2B55;
+    margin-left: 1em;
+}
+
+/* -----------------FORMULIEREN----------------- */
+
+/* filter normaal */
+form[name='filter'] {
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    background-color: white;
+    border-radius: 1em;
+    margin: auto;
+    width: 17em;
+}
+form[name='filter'] legend {
+    background-color: #00D66C;
+    color: white;
+    width: 12.58em;
+    margin-left: -1.3em;
+    padding: 1em;
+    border-radius: 0.5em 0.5em 0 0;
+}
+form[name='filter'] fieldset fieldset legend {
+    background: none;
+    color: #00D66C;
+    padding: 0;
+    font-size: 1em;
+}
+
+/* filter uitklappen */
+form.active {
+    background-color: white;
+    border-radius: 1em;
+    height: 38em;
+    margin: auto;
+    margin-top: 1em;
+    padding: 0 1em 1em 1em;
+    width: 17em;
+}
+form.active legend {
+    background-color: #00D66C;
+    color: white;
+    width: 12.58em;
+    margin-left: -1.3em;
+    padding: 1em;
+    border-radius: 0.5em 0.5em 0 0;
+}
+form.active fieldset fieldset legend {
+    background: none;
+    color: #00D66C;
+    padding: 0;
+    font-size: 1em;
+}
+
+/* formulier op inlog pagina */
+form[name=formulier], form[name=formulier2] {
+    background-color: white;
+    border-radius: 1em;
+    margin: auto;
+    margin-top: 1em;
+    opacity: 0.9;
+    padding: 2em 1em;
+    width: 16em;
+}
+
+/* andere form verbergen */
+form[name="filter2"] {
+    display: none;
+}
+
+/* form opmaak */
+section fieldset {
+    border: 1px solid blue;
+}
+section fieldset legend {
+    color: #00D66C;
+    font-size: 1.1em;
+}
+form p {
+    font-size: 0.8em;
+    margin-bottom: 2em;
+}
+form label {
+    display: block;
+    font-size: 0.8em;
+}
+form fieldset {
+    border: none;
+}
+form legend {
+    color: #2800A0;
+    font-size: 1.5em;
+}
+form a {
+    color: #2800A0;
+}
+form input[type=checkbox] {
+    display: inline;
+    font-size: 5em;
+    border: solid 1px lightgrey;
+}
+
+form input[type=range] {
+    display: inline;
+}
+form input[type=text] {
+    border: 1px solid #EFEFEF;
+    border-color: lightgrey;
+    border-radius: 10px;
+    cursor: text;
+    display: block;
+    font-size: 0.8em;
+    margin: 5px 0 1em;
+    opacity: 1;
+    padding: 10px 10px;
+    width: 16em;
+}
+form input[type=submit] {
+    background-color: #FF3268;
+    border: none;
+    border-radius: 2em;
+    box-shadow: 0 3px 3px #CA2B55;
+    color: white;
+    display: block;
+    font-family: inherit;
+    font-size: 14px;
+    margin: 1.5em 0;
+    padding: 10px 10px;
+    width: 7em;
+}
+input+a {
+    font-size: 0.8em;
+    padding: 2em 0;
+}
+input+p {
+    display: inline;
+    font-size: 0.8em;
+}
+input+p+a {
+    font-size: 0.8em;
+}
+
+/* --------------- STATES -----------*/
+a:hover {
+    color: #2800A0;
+    cursor: pointer;
+    text-decoration: underline;
+}
+a:active {
+    color: #2800A0;
+    text-decoration: underline;
+}
+main>a:hover {
+    background-color: #5E40B8;
+    color: white;
+    text-decoration: none;
+}
+main section button:focus {
+    outline: none;
+}
+main section button:hover {
+    background-color: #5E40B8;
+}
+
+main section button:nth-of-type(2):hover {
+    background-color: #FF658E;
+}
+input[type=checkbox]:checked {
+    background-color: #00D66C;
+}
+input[type=text]:focus {
+    outline-color: #2800A0;
+}
+form input[type=submit]:hover {
+    background-color: #FF658E;
+}
+input[type=submit]:focus {
+    outline: none;
+}
+img[alt="opslaangroen"]:hover,
+img[alt="downloadgroen"]:hover {
+    cursor: pointer;
+    transform: scale(1.2)
+}
+form[name=formulier2]:valid {
+    background-color: #00D66C;
+}
+form input[type=text]:valid {
+    outline-color: #00D66C;
+}
+section article:hover {
+    transform: scale(1.1);
+}
+main div article:hover {
+    transform: scale(1.1);
+}
+
+/* -----------------------NA FILTER--------------------- */
+section {
+    margin-top: 1em;
+}
+
+section:nth-child(4) h4 {
+    display: none;
+}
+section article {
+    background-color: white;
+    border-radius: 1em;
+    display: grid;
+    grid-template-columns: auto;
+    height: 15em;
+    margin: auto;
+    margin-bottom: 2em;
+    padding: 15px;
+    position: relative;
+    width: 17em;
+}
+
+section article:nth-child(9) h2{
+    width: 13em;
+    text-align: left;
+}
+section article a img {
+    border-radius: 15px 15px 0 0;
+    margin: -15px;
+    width: 111%;
+}
+
+/* mijn lijst button */
+section img[alt="downloadgroen"] {
+    width: 2.1em;
+    margin-left: 12.1em;
+    margin-top: +2em;
+    border-radius: 0.2em;
+}
+
+/*download button */
+section img[alt="opslaangroen"] {
+    width: 1.8em;
+    margin-left: 15em;
+    margin-top: -2.7em;
+}
+
+/* Titels */
+h3 {
+    color: #00D66C;
+    display: block;
+    font-size: 2em;
+    margin-top: +2em;
+    margin-bottom: 0.5em;
+}
+h4 {
+    color: #2800A0;
+    font-size: 1.5em;
+    margin: 20px 0;
+}
+h2,
+h5 {
+    border-radius: 15px 15px 0 0;
+    color: #00D66C;
+    font-size: 15px;
+    margin-top: +12em;
+    position: absolute;
+    text-transform: uppercase;
+    width: 90%;
+}
+
+/* naar boven button */
+main>a {
+    background-color: #2800A0;
+    border-radius: 1em;
+    color: white;
+    font-size: 0.8em;
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding: 0.8em;
+    text-decoration: none;
+    display: block;
+    width: 6em;
+}
+
+/* footer */
+footer {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 -1em;
+    padding: 0.5em 1em;
+}
+footer p {
+    color: #00D66C;
+    font-size: 1.5em;
+    margin-right: auto;
+}
+footer img {
+    height: 2.2em;
+}
+
+.inlogfooter {
+    margin-top: -2em;
+}
+
+
+/* verhaal.html */
+img[alt=gif] {
+    width: 100%;
+    margin: auto;
+    padding-top: 1em;
+}
+
+/* ---------------MICRO INTERACTIES--------------------*/
+#opslaanPlus {
+    width: 1.7em;
+}
+.fadeIn,
+#opslaanPlus {
+    animation: fade 3s;
+}
+#opslaanPlus {
+    animation: schaal 1.5s;
+}
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes schaal {
+    0% {
+        width: 1.7em;
+    }
+
+    50% {
+        width: 2em;
+    }
+
+    100% {
+        width: 1.7em;
+    }
+}
+
+/*  -------------------------------------------------- */
+@media(min-width: 45em) {
+    main div {
+        background-image: url(achtergrong35.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 140%;
+        padding-top: 1em;
+        height: 26em;
+    }
+
+    main section:nth-child(2){
+    margin: auto;
+    width: 41em;
+}
+
+    section:nth-child(4) {
+        display: grid;
+        grid-gap: 0;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        max-width: 45em;
+        margin: auto;
+    }
+
+    section:nth-child(5){
+         display: grid;
+        grid-gap: 0;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 5em 1fr;
+        max-width: 45em;
+        margin: auto;
+    }
+
+
+    form[name="filter2"] {
+        display: none;
+    }
+
+    section {
+        padding-bottom: 1em;
+    }
+
+    h4 {
+        font-size: 2em;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    main>form {
+        margin-left: 7em;
+        width: 30em;
+    }
+
+    section form {
+        width: 30em;
+    }
+    /* ----------------filteren------------- */
+
+    form[name='filter'] {
+        height: 0;
+        overflow: hidden;
+        width: 17em;
+    }
+
+    form[name='filter'] legend {
+        width: 12.58em;
+        margin-left: -1.3em;
+    }
+    /* filter uitklappen */
+
+    form.active {
+        height: 38em;
+        margin: auto;
+        margin-top: 1em;
+        width: 40em;
+    }
+
+    form.active fieldset fieldset {
+        display: block;
+    }
+
+    form.active legend {
+        width: 40em;
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+    /* inloggen */
+
+    form[name=formulier], form[name=formulier2] {
+        width: 22em;
+    }
+
+    /* Footer */
+    footer {
+        padding: 1em 16em;
+    }
+
+}
+
+/* ----------------------------------------------------*/
+@media(min-width: 80em) {
+    main div {
+        background-size: 100%;
+    }
+
+    main section:nth-child(2){
+    margin: auto;
+    width: 79em;
+}
+    /* filter button weghalen en filter opklappen */
+
+    main>button {
+        display: none;
+    }
+    /* filter */
+
+    form[name='filter'] {
+        display: none;
+    }
+
+    form[name='filter2'] {
+        background-color: white;
+        border-radius: 1em;
+        height: 35em;
+        margin: auto;
+        margin-top: 1em;
+        padding: 0 1em 1em 1em;
+        width: 17em;
+        display: block;
+    }
+
+    form[name='filter2'] legend {
+        background-color: #00D66C;
+        color: white;
+        width: 15.3em;
+        margin-left: -1.7em;
+        padding: 1em;
+        border-radius: 0.5em 0.5em 0 0;
+        margin-bottom: 1em;
+    }
+
+    form[name='filter2'] fieldset fieldset legend {
+        background: none;
+        color: #00D66C;
+        padding: 0;
+        font-size: 1em;
+        margin-bottom: 0;
+    }
+
+    form[name='filter2'] input[type=submit] {
+        margin-top: -0.5em;
+    }
+    /* -----------------blok populaire verhalen----------------- */
+
+    section:nth-child(4) {
+        display: grid;
+        grid-template-areas:  "filter article1 article3 article5"                           "filter article2 article4 article6";
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 20em 20em;
+        max-width: 80em;
+        margin-bottom: 5em;
+    }
+    /* wanneer de section het 5e child is, daarvan het 3e child */
+
+    section:nth-child(4) article:nth-child(3) {
+        grid-area: article1;
+    }
+
+    section:nth-child(4) article:nth-child(4) {
+        grid-area: article2;
+    }
+
+    section:nth-child(4) article:nth-child(5) {
+        grid-area: article3;
+    }
+
+    section:nth-child(4) article:nth-child(6) {
+        grid-area: article4;
+    }
+
+    section:nth-child(4) article:nth-child(7) {
+        grid-area: article5;
+    }
+
+    section:nth-child(4) article:nth-child(8) {
+        grid-area: article6;
+    }
+
+    form[name='filter2'] {
+        grid-area: filter;
+    }
+
+    h4 {
+        grid-area: h4;
+        border-bottom: white 3px solid;
+        opacity: 0.9;
+        padding: 0.2em;
+    }
+    /* einde blok populaire verhalen */
+    /* --------------- blok nieuwe verhalen ----------------- */
+
+    section:nth-child(5) {
+        display: grid;
+        grid-template-areas: "h4       h4       h4       h4" "article1 article2 article3 article4";
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 5em 20em;
+        max-width: 80em;
+        margin: auto;
+    }
+
+    section:nth-child(5) h4 {
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
+
+    section:nth-child(5) article:nth-child(2) {
+        grid-area: article1;
+    }
+
+    section:nth-child(5) article:nth-child(3) {
+        grid-area: article2;
+    }
+
+    section:nth-child(5) article:nth-child(4) {
+        grid-area: article3;
+    }
+
+    section:nth-child(5) article:nth-child(5) {
+        grid-area: article4;
+    }
+    /* einde blok nieuwe verhalen */
+    /* inloggen */
+
+    form[name=formulier], form[name=formulier2] {
+        margin-top: 1em;
+        padding: 2em 1em;
+        width: 25em;
+    }
+    /* Footer */
+
+    footer {
+        padding: 1em 37em;
+    }
+}

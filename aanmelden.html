@@ -14,33 +14,51 @@
             <ul>
                 <li>
                     <a href="index.html">
-                        <img id="logo" src="fotos/transavia-logo.png" alt="Link homepage">
+                        <img src="fotos/transavia-logo.png" alt="Link homepage">
                     </a>
                 </li>
-                <li><a href="">Verhalen</a></li>
-                <li><a href="">Mijn lijst</a></li>
-                <li><a href="formulier.html">Account</a></li>
+                <li>
+                    <a href=""><img src="iconen/downloadicoon.png" alt="Downloaden"><span>Downloaden</span></a>
+                </li>
+                <li>
+                    <a href=""><img src="iconen/mijnlijsticoon2.png" alt="Mijn lijst"><span>Mijn Lijst</span></a>
+                </li>
+                <li>
+                    <a href="formulier.html"><img src="iconen/account%20icoon.png" alt="Account"><span>Account</span></a>
+                </li>
             </ul>
-
         </nav>
     </header>
+    <main>
+        <div class="aanmelden">
+            <form action="index.html" name="formulier2">
+                <fieldset>
+                    <legend>Meld je aan!</legend>
+                    <p>Vul de gegevens in om een account te maken.</p>
 
-    <form id="aanmelden" action="index.html">
-        <h2 class="accinlo">Meld je aan!</h2>
-        <p>Vul de gegevens in om een account te maken.</p>
+                    <label for="naam">Naam</label>
+                    <input type="text" id="naam" required="required" placeholder="Naam">
 
-        <label for="naam">Naam</label>
-        <input type="text" id="naam" required="required" placeholder="Naam">
+                    <label for="mail">E-mail</label>
+                    <input type="text" id="mail" required="required" placeholder="gebruiker@domein.nl">
 
-        <label for="mail">E-mail</label>
-        <input type="text" id="mail" required="required" placeholder="gebruiker@domein.nl">
+                    <label for="wachtwoord">Wachtwoord</label>
+                    <input type="text" id="wachtwoord" required="required">
 
-        <label for="wachtwoord">Wachtwoord</label>
-        <input type="text" id="wachtwoord" required="required">
+                    <label for="wachtwoordb">Bevestig wachtwoord</label>
+                    <input type="text" id="wachtwoordb" required="required">
 
-        <label for="wachtwoordb">Bevestig wachtwoord</label>
-        <input type="text" id="wachtwoordb" required="required">
-
-        <input type="submit" value="Aanmaken">
-
-    </form>
+                    <input type="submit" value="Aanmaken">
+                </fieldset>
+            </form>
+        </div>
+    </main>
+    <footer class="inlogfooter">
+        <p>Transavia</p>
+        <img src="iconen/facebookicoon.png" alt="facebook">
+        <img src="iconen/instaicoon.png" alt="instagram">
+        <img src="iconen/twittericoon.png" alt="twitter">
+    </footer>
+    <script src="js/transavia.js"></script>
+</body>
+</html>

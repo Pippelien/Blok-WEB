@@ -1,4 +1,4 @@
-<!-- atribute selector -->
+<!-- mobiel -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,117 +14,295 @@
             <ul>
                 <li>
                     <a href="index.html">
-                        <img id="logo" src="fotos/transavia-logo.png" alt="Link homepage">
+                        <img src="fotos/transavia-logo.png" alt="Link homepage">
                     </a>
                 </li>
-                <li><a href="">Verhalen</a></li>
-                <li><a href="">Mijn lijst</a></li>
-                <li><a href="formulier.html">Account</a></li>
+                <li>
+                    <a href=""><img src="iconen/downloadicoon.png" alt="Downloaden"></a>
+                </li>
+                <li>
+                    <a href=""><img src="iconen/mijnlijsticoon2.png" alt="Mijn lijst"></a>
+                </li>
+                <li>
+                    <a href="formulier.html"><img src="iconen/account%20icoon.png" alt="Account"></a>
+                </li>
             </ul>
-
         </nav>
+
     </header>
 
     <main>
-        <article id="intro">
-            <h2>99 Verhalen</h2>
-            <p>Lees hier de leukst gestijlde verhalen voor op reis!</p>
-        </article>
+        <div>
+            <section>
+                <h1>99 Verhalen</h1>
+                <p>Lees hier de leukst gestijlde verhalen voor op reis!</p>
+            </section>
+            <div>
+                <article>
+                    <a href="verhaal.html">
+                        <h2>21. Sonnet</h2>
+                        <img src="fotos/sonnet2.png" alt="Verhaal"></a>
+                    <img src="iconen/downloadicoon.png" alt="downloadgroen">
+                    <img src="iconen/mijnlijsticoon2.png" alt="opslaangroen">
+                </article>
 
-        <a class="hoofdblok" href="verhaal.html">
-            <article id="hoofdblok">
-                <h3>Verhaal van de dag</h3>
-            </article>
-        </a>
+            </div>
+        </div>
 
-        <!--
-        <form id="zoek" action="linkje">
-            <input class="zoek" type="search"> -->
-        <button class="zoek"><img src="fotos/zoekicoon.png" alt="zoek button"></button>
-        <!-- </form> -->
+        <section>
+            <h3>Wat wil je lezen?</h3>
+            <button>Filter</button>
+            <button><img src="fotos/zoekicoon.png" alt="zoek button"></button>
+        </section>
 
-        <h3>Sorteren</h3>
-        <form id="sorteren" method="post" action="index.html">
-            <INPUT TYPE="radio" NAME="sortering" VALUE="Populariteit" checked>Populariteit
-            <INPUT TYPE="radio" NAME="sortering" VALUE="Alfabetisch">Alfabetisch
-            <INPUT TYPE="radio" NAME="sortering" VALUE="Nieuw">Nieuw
+
+        <form action="index.html" name="filter">
+            <fieldset>
+                <legend>Filter</legend>
+                <fieldset>
+                    <legend>Genre</legend>
+                    <label><input type="checkbox" name="gevoel" value="bekende namen" checked>Bekende namen  (10)</label>
+                    <label><input type="checkbox" name="gevoel" value="kort maar krachtig">Kort maar krachtig  (6) </label>
+
+                    <label><input type="checkbox" name="gevoel" value="vol emotie">Vol emotie  (14)</label>
+
+                    <label><input type="checkbox" name="gevoel" value="Politiek">Politiek  (9)</label>
+
+                    <label>
+                <input type="checkbox" name="gevoel" value="Opinie">Opinie (5) </label>
+
+                    <label>
+                <input type="checkbox" name="gevoel" value="Humor">
+                Humor(17) </label>
+
+                    <label>
+                <input type="checkbox" name="gevoel" value="sport">
+               Sport (8)</label>
+
+                    <label>
+                <input type="checkbox" name="gevoel" value="drama">
+                Drama (3)</label>
+                    <label>
+                <input type="checkbox" name="gevoel" value="fantasie">
+               Fantasie (5)</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Lengte</legend>
+                    <label>
+                <input type="checkbox" name="gevoel" value="<20 regels">
+               minder dan 20 regels</label>
+                    <label>
+                <input type="checkbox" name="gevoel" value="<20 regels">
+               20-40 regels</label>
+                    <label>
+                <input type="checkbox" name="gevoel" value="<20 regels">
+               > 40 regels</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Kleur</legend>
+                    <label for="rood">Rood</label>
+                    <input type="range" id="rood" name="rood" value="0">
+
+                    <label for="blauw">Blauw</label>
+                    <input type="range" id="blauw" name="blauw" value="0">
+
+                    <label for="groen">Groen</label>
+                    <input type="range" id="groen" name="groen" value="0">
+                </fieldset>
+            </fieldset>
+            <input type="submit" value="Toepassen">
         </form>
 
-        <h3>Filter</h3>
-        <form id="gevoel" method="post" action="index.html">
-            <fieldset>
-                <legend>Gevoel</legend>
-                <INPUT TYPE="checkbox" id="boos" NAME="gevoel" VALUE="boos" checked>
-                <label for="boos">Boos</label>
-                <INPUT TYPE="checkbox" NAME="gevoel" id="blij" VALUE="blij">
-                <label for="blij">Blij</label>
-                <INPUT TYPE="checkbox" id="treurig" NAME="gevoel" VALUE="treurig">
-                <label for="treurig">Treurig</label>
-                <INPUT TYPE="checkbox" id="gestrest" NAME="gevoel" VALUE="Gestrest">
-                <label for="gestrest">Gestrest</label>
-                <INPUT TYPE="checkbox" id="gefrustreerd" NAME="gevoel" VALUE="Gefrustreerd">
-                <label for="gefrustreerd">Gefrustreerd</label>
-                <INPUT TYPE="checkbox" id="Dromerig" NAME="gevoel" VALUE="Dromerig">
-                <label for="Dromerig">Dromerig</label>
-            </fieldset>
 
-            <fieldset>
-                <legend>Kleur</legend>
-                <label for="rood">Rood</label>
-                <input type="range" id="rood" name="rood" value="0">
+        <section>
+            <h4>Populaire verhalen</h4>
+            <form method="post" action="index.html" name="filter2">
+                <fieldset>
+                    <legend>Filter</legend>
+                    <fieldset>
+                        <legend>Genre</legend>
+                        <label><input type="checkbox" name="gevoel" value="bekende namen" checked>Bekende namen  (10)</label>
+                        <label><input type="checkbox" name="gevoel" value="kort maar krachtig">Kort maar krachtig  (6) </label>
 
-                <label for="blauw">Blauw</label>
-                <input type="range" id="blauw" name="blauw" value="0">
+                        <label><input type="checkbox" name="gevoel" value="vol emotie">Vol emotie  (14)</label>
 
-                <label for="groen">Groen</label>
-                <input type="range" id="groen" name="groen" value="0">
-            </fieldset>
-        </form>
+                        <label><input type="checkbox" name="gevoel" value="Politiek">Politiek  (9)</label>
 
-        <hr>
-        <h3>Populaire verhalen</h3>
-        <a href="verhaal.html">
-            <article class="verhaal">
-                <h4>36. Alliteratie</h4>
-                <img class="Verhalen" src="fotos/Boek.jpg" alt="Verhaal">
+                        <label>
+                <input type="checkbox" name="gevoel" value="Opinie">Opinie (5) </label>
+
+                        <label>
+                <input type="checkbox" name="gevoel" value="Humor">
+                Humor(17) </label>
+
+                        <label>
+                <input type="checkbox" name="gevoel" value="sport">
+               Sport (8)</label>
+
+                        <label>
+                <input type="checkbox" name="gevoel" value="drama">
+                Drama (3)</label>
+                        <label>
+                <input type="checkbox" name="gevoel" value="fantasie">
+               Fantasie (5)</label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Lengte</legend>
+                        <label>
+                <input type="checkbox" name="gevoel" value="<20 regels">
+               minder dan 20 regels</label>
+                        <label>
+                <input type="checkbox" name="gevoel" value="<20 regels">
+               20-40 regels</label>
+                        <label>
+                <input type="checkbox" name="gevoel" value="<20 regels">
+               > 40 regels</label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Kleur</legend>
+                        <label for="rood">Rood</label>
+                        <input type="range" id="rood" name="rood" value="0">
+
+                        <label for="blauw">Blauw</label>
+                        <input type="range" id="blauw" name="blauw" value="0">
+
+                        <label for="groen">Groen</label>
+                        <input type="range" id="groen" name="groen" value="0">
+                    </fieldset>
+                </fieldset>
+                <input type="submit" value="Toepassen">
+            </form>
+
+            <article>
+                <a href="verhaal.html">
+                    <h5>36. Alliteratie</h5>
+                    <img src="fotos/alliteratie2.png" alt="Verhaal"></a>
+                <img src="iconen/downloadicoon.png" alt="downloadgroen">
+                <img src="iconen/mijnlijsticoon2.png" alt="opslaangroen">
             </article>
-        </a>
 
-        <a href="verhaal.html">
-            <article class="verhaal">
-                <h4>47. Haiku</h4>
-                <img class="Verhalen" src="fotos/Boek.jpg" alt="Verhaal">
+            <article>
+                <a>
+                    <h2>11. Regenboog </h2>
+                    <img src="fotos/regenboog2.png" alt="Verhaal"></a>
+                <img src="iconen/downloadicoon.png" alt="downloadgroen">
+                <img src="iconen/mijnlijsticoon2.png" alt="opslaangroen">
             </article>
-        </a>
 
-        <a href="verhaal.html">
-            <article class="verhaal">
-                <h4>55. Verhaal</h4>
-                <img class="Verhalen" src="fotos/Boek.jpg" alt="Verhaal">
+            <article>
+                <a>
+                    <h2>19. Vrije versvorm</h2>
+                    <img src="fotos/19.png" alt="Verhaal"></a>
+                <img src="iconen/downloadicoon.png" alt="downloadgroen">
+                <img src="iconen/mijnlijsticoon2.png" alt="opslaangroen">
             </article>
-        </a>
 
-        <hr>
-
-        <h3>Nieuwe verhalen</h3>
-        <a href="verhaal.html">
-            <article class="verhaal">
-                <h4>Verhaal 1</h4>
-                <img class="Verhalen" src="fotos/Boek.jpg" alt="Verhaal">
+            <article>
+                <a>
+                    <h5>06. Hardboiled</h5>
+                    <img src="fotos/hardboiled2.png" alt="Verhaal"></a>
+                <img src="iconen/downloadicoon.png" alt="downloadgroen">
+                <img src="iconen/mijnlijsticoon2.png" alt="opslaangroen">
             </article>
-        </a>
 
-        <a href="verhaal.html">
-            <article class="verhaal">
-                <h4>Verhaal 2</h4>
-                <img class="Verhalen" src="fotos/Boek.jpg" alt="Verhaal">
+            <article>
+                <a>
+                    <h5>73. Stoned</h5>
+                    <img src="fotos/stoned2.png" alt="Verhaal"></a>
+                <img src="iconen/downloadicoon.png" alt="downloadgroen">
+                <img src="iconen/mijnlijsticoon2.png" alt="opslaangroen">
             </article>
-        </a>
+
+            <article>
+                <a>
+                    <h5>02. Essentie</h5>
+                    <img src="fotos/essentie2.png" alt="Verhaal"></a>
+                <img src="iconen/downloadicoon.png" alt="downloadgroen">
+                <img src="iconen/mijnlijsticoon2.png" alt="opslaangroen">
+            </article>
+        </section>
+
+        <section>
+            <h4>Nieuwe verhalen</h4>
+            <article>
+                <a>
+                    <h5>16. Eric lucassen</h5>
+                    <img src="fotos/eric2.png" alt="Verhaal"></a>
+                <img src="iconen/downloadicoon.png" alt="downloadgroen">
+                <img src="iconen/mijnlijsticoon2.png" alt="opslaangroen">
+            </article>
+
+            <article>
+                <a>
+                    <h5>03. Droom</h5>
+                    <img src="fotos/droom2.png" alt="Verhaal"></a>
+                <img src="iconen/downloadicoon.png" alt="downloadgroen">
+                <img src="iconen/mijnlijsticoon2.png" alt="opslaangroen">
+            </article>
+
+            <article>
+                <a>
+                    <h5>14. Johan Cruijf</h5>
+                    <img src="fotos/johan2.png" alt="Verhaal"></a>
+                <img src="iconen/downloadicoon.png" alt="downloadgroen">
+                <img src="iconen/mijnlijsticoon2.png" alt="opslaangroen">
+            </article>
+            <article>
+                <a>
+                    <h2>39. Poepen</h2>
+                    <img src="fotos/poep2.png" alt="Verhaal"></a>
+                <img src="iconen/downloadicoon.png" alt="downloadgroen">
+                <img src="iconen/mijnlijsticoon2.png" alt="opslaangroen">
+            </article>
+
+            <article>
+                <a>
+                    <h2>03. Droom</h2>
+                    <img src="fotos/droom3.png" alt="Verhaal"></a>
+                <img src="iconen/downloadicoon.png" alt="downloadgroen">
+                <img src="iconen/mijnlijsticoon2.png" alt="opslaangroen">
+            </article>
+
+            <article>
+                <a>
+                    <h5>28. Alzeimer</h5>
+                    <img src="fotos/alzeimer2.png" alt="Verhaal"></a>
+                <img src="iconen/downloadicoon.png" alt="downloadgroen">
+                <img src="iconen/mijnlijsticoon2.png" alt="opslaangroen">
+            </article>
+
+            <article>
+                <a>
+                    <h2>73. Stoned</h2>
+                    <img src="fotos/stoned3.png" alt="Verhaal"></a>
+                <img src="iconen/downloadicoon.png" alt="downloadgroen">
+                <img src="iconen/mijnlijsticoon2.png" alt="opslaangroen">
+            </article>
+
+            <article>
+                <a>
+                    <h2>11. Presentator die ten onrechte denkt aansluiting te hebben gevonden bij ‘de kids’</h2>
+                    <img src="fotos/regenboog2.png" alt="Verhaal"></a>
+                <img src="iconen/downloadicoon.png" alt="downloadgroen">
+                <img src="iconen/mijnlijsticoon2.png" alt="opslaangroen">
+            </article>
+        </section>
 
 
-        <a class="naarbovenknop" href="#top">Naar boven</a>
+        <a href="#top">Naar boven</a>
 
 
     </main>
+    <footer>
+        <p>Transavia</p>
+        <img src="iconen/facebookicoon.png" alt="facebook">
+        <img src="iconen/instaicoon.png" alt="instagram">
+        <img src="iconen/twittericoon.png" alt="twitter">
+    </footer>
+    <script src="js/transavia.js"></script>
 </body>
 </html>
